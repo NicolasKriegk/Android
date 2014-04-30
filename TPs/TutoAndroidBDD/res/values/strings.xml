@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TutoAndroidBDD</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_creerInfoBDD">Créer entrée</string>
+    <string name="menu_supprInfoBDD">Suppr. entrée</string>
+    <string name="title_activity_saisie_info">SaisieInfoActivity</string>
+    <string name="btnCreerInfoBDD">Creer dans la base</string>
+    <string name="btnModifInfoBDD">Modifier</string>
+    <string name="btnAnnul">Annuler</string>
+    <string name="extraBDDFld_IdInfo">idInfo</string>
+    <string name="extraBDDFld_Info">info</string>
+    <string name="nomTable">infos</string>
+    	
+    
+</resources>

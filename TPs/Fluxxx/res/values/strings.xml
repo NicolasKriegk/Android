@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fluxxx</string>
+    <string name="hello_world">Salut à toi!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity2">Activity2</string>
+    <string name="button1">Bouton 1</string>
+    <string name="button2">Bouton 2</string>
+    <string name="tpacpc">Touche pas à ça p\'tit con!</string>
+    <string name="title_activity_calculatrice">Calculatrice</string>
+    <string name="buttonNum1">1</string>
+    <string name="buttonNum2">2</string>
+    <string name="buttonNum3">3</string>
+    <string name="buttonNum4">4</string>
+    <string name="buttonNum5">5</string>
+    <string name="buttonNum6">6</string>
+    <string name="buttonNum7">7</string>
+    <string name="buttonNum8">8</string>
+    <string name="buttonNum9">9</string>
+    <string name="buttonNum0">0</string>
+    <string name="buttonPlus">+</string>
+    <string name="buttonMin">-</string>
+    <string name="buttonDiv">/</string>
+    <string name="buttonBy">*</string>
+    <string name="buttonEqual">=</string>
+    <string name="buttonComma">,</string>
+    <string name="buttonReset">CE</string>
+    <string name="affich0">0</string>
+    <string name="erreurDiv0">BOULET!!!</string>
+    <string name="title_activity_accueil">Accueil</string>
+    <string name="demandeNom">Bonjour, saisissez votre nom:</string>
+    <string name="buttonStartCalc">Calculatrice</string>
+    <string name="dataNom">nom</string>
+    
+</resources>
