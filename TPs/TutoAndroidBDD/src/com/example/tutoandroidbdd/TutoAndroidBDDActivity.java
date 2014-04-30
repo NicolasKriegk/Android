@@ -12,13 +12,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
 public class TutoAndroidBDDActivity extends ListActivity {
 
-	//variable globale associee a l'activité
+	//variable globale associee a l'activitï¿½
 	private BDD maBase;
 	private Cursor cListeInfos;
 	
@@ -43,8 +42,8 @@ public class TutoAndroidBDDActivity extends ListActivity {
 		SimpleCursorAdapter adapter = new SimpleCursorAdapter(this,
 					android.R.layout.simple_list_item_1,
 					cListeInfos,
-					new String[]{"info"},
-					new int[] {android.R.id.text1});
+					new String[]{"_id","info"},
+					new int[] {android.R.id.text1, android.R.id.text2});
 		//mise a jour de la liste
 		setListAdapter(adapter);
 		
