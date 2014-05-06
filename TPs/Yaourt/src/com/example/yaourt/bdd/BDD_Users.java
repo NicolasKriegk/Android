@@ -17,18 +17,20 @@ public class BDD_Users {
 		base = helper.getWritableDatabase();
 	}
 	
-	public Cursor getInfos() {
-		return base.rawQuery("SELECT _login, passwd FROM users", null);
+	public Cursor getUsers() {
+		return base.query("users", null, null, null, null, null, null);
 	}
 
-	public long createInfo(String info) {
+	public long createUser(String user) {
 		ContentValues values = new ContentValues();
-		values.putNull("_id");
-		values.put("info", info);
-		return base.insert("infos", null, values);
+//		values.put("_login",user.getLogin());
+//		values.put("passw", user.getPassw());
+//		values.put("name", user.getName());
+//		values.put("super_user", user.isSuperUser());
+		return base.insert("users", null, values);
 	}
 
-	public void modifInfo(long id, String info) {
+	public void modifUser(long id, String info) {
 		ContentValues values = new ContentValues();
 //		values.put("_id", id);
 		values.put("info", info);
@@ -36,7 +38,7 @@ public class BDD_Users {
 		base.update("infos", values, "_id = " + id, null);
 	}
 
-	public void supprInfo(long id) {
+	public void supprUser(long id) {
 //		ContentValues values = new ContentValues();
 //		values.putNull("_id");
 //		values.put("info", info);

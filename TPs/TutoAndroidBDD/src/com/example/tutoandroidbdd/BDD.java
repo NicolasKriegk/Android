@@ -1,8 +1,5 @@
 package com.example.tutoandroidbdd;
 
-import com.example.tutoandroidbdd.R.string;
-
-import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

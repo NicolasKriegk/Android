@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  menu_homeAddUser  
+	<!-- menu login -->
+    <string name="action_forgot_password">Recover lost password</string>
+	<!-- menu accueil -->
+    <string name="menu_homeAddUser">Add user</string>
+</resources>
