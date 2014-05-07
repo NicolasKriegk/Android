@@ -17,32 +17,33 @@ public class BDD_Users {
 		base = helper.getWritableDatabase();
 	}
 	
-	public Cursor getUsers() {
+	public Cursor getUsers(String[] user) {
+//TODO filtrer la recherche. pour le moment, toute la liste est remontee 
+//		return base.query("users", null, arguments de recherche a completer, null, null, null, null);
 		return base.query("users", null, null, null, null, null, null);
 	}
 
-	public long createUser(String user) {
+	public long createUser(String[] user) {
 		ContentValues values = new ContentValues();
-//		values.put("_login",user.getLogin());
-//		values.put("passw", user.getPassw());
-//		values.put("name", user.getName());
-//		values.put("super_user", user.isSuperUser());
+		//TODO verifier les infos avant d'ecrire
+		values.put("_login",user[0]);
+		values.put("name",user[1]);
+		values.put("passw",user[2]);
+		values.put("super_user",Integer.valueOf(user[3]));
 		return base.insert("users", null, values);
 	}
 
-	public void modifUser(long id, String info) {
+	public void modifUser(String id, String[] user) {
 		ContentValues values = new ContentValues();
-//		values.put("_id", id);
-		values.put("info", info);
-//		base.update("infos", values, String.valueOf(id), null);
-		base.update("infos", values, "_id = " + id, null);
+		//TODO verifier les infos avant d'ecrire
+		values.put("_login",user[0]);
+		values.put("name",user[1]);
+		values.put("passw",user[2]);
+		values.put("super_user",Integer.valueOf(user[3]));
+		base.update("users", values, "_login = " + id, null);
 	}
 
 	public void supprUser(long id) {
-//		ContentValues values = new ContentValues();
-//		values.putNull("_id");
-//		values.put("info", info);
-//		base.delete("@string/nomTable", whereClause, whereArgs);
-//		return base.insert("infos", null, values);
+
 	}
 }

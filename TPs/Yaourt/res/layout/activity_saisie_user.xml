@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tutoandroidbdd.SaisieInfoActivity"
+    tools:ignore="MergeRootFrame">
+    
+	<LinearLayout
+	    android:id="@+id/LayoutPrincipal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	>
+	    <EditText
+		    android:id="@+id/editSaisieUserLogin"
+		    android:hint="@string/hint_userLogin"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+   	        android:layout_gravity="center_horizontal"
+		>
+		    <requestFocus />
+		</EditText>
+	    <EditText
+		    android:id="@+id/editSaisieUserName"
+		    android:hint="@string/hint_userName"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+   	        android:layout_gravity="center_horizontal"
+		>
+		    <requestFocus />
+		</EditText>
+	    <EditText
+		    android:id="@+id/editSaisieUserPassw"
+		    android:hint="@string/hint_userPassw"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+   	        android:layout_gravity="center_horizontal"
+		>
+		    <requestFocus />
+		</EditText>
+
+	    <CheckBox
+	        android:id="@+id/checkBoxSuperUser"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/checkboxSuperUser" />
+	    	    	    	
+		<LinearLayout
+		    android:id="@+id/LayoutBoutons"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		>
+		    <Button
+	   	        android:id="@+id/btnWriteUserBDD"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="wrap_content"
+	   	        android:layout_gravity="center_horizontal"
+	   	        android:text="@string/btnWriteUserBDD"
+	   	        android:layout_weight=".5"
+	   	    />
+	    	
+		    <Button
+	   	        android:id="@+id/btnAnnulWriteUserBDD"
+	   	        android:text="@string/btnAnnul"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="wrap_content"
+	   	        android:layout_gravity="center_horizontal"
+	   	        android:layout_weight=".5"
+	   	    />
+	    	
+		</LinearLayout>
+	 </LinearLayout>
+		
+
+</FrameLayout>
+

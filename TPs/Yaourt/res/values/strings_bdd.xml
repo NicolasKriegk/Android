@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="users_login">_login</string>
+    <string name="users_name">name</string>
+    <string name="users_passw">passw</string>
+    <string name="users_super_user">super_user</string>
+    
+</resources>

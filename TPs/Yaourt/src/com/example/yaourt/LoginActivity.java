@@ -67,12 +67,10 @@ public class LoginActivity extends Activity {
 		//Acces a la base des utilisateurs
 		maBase = new BDD_Users();
 		maBase.open(this);	
-		cListeUsers = maBase.getUsers();
+		cListeUsers = maBase.getUsers(new String[]{});
 		
 		// Set up the login form.
-//		mLogin = getIntent().getStringExtra(EXTRA_EMAIL);
 		mLoginView = (EditText) findViewById(R.id.login);
-//		mLoginView.setText(mLogin);
 
 		mPasswordView = (EditText) findViewById(R.id.password);
 		mPasswordView
@@ -237,8 +235,9 @@ public class LoginActivity extends Activity {
 			if (success) {
 				//sauvegarde du nom de l'utilisateur dans un fichier
 				cookie = getSharedPreferences("cookieSession", MODE_PRIVATE);
-				cookie.edit().putString("userName", mLogin).commit();
-				cookie.edit().putString("superUser", mLogin).commit();
+				cookie.edit().putString("userLogin", mLogin).commit();
+				cookie.edit().putString("userName", cListeUsers.getString(cListeUsers.getColumnIndex("name"))).commit();
+				cookie.edit().putInt("superUser", cListeUsers.getInt(cListeUsers.getColumnIndex("super_user"))).commit();
 				
 				//fermeture curseur
 				cListeUsers.close();

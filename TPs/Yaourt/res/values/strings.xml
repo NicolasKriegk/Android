@@ -2,8 +2,49 @@
 <resources>
 
     <string name="app_name">Yaourt</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+<!-- extras intent -->
+    <string name="extra_action">Action</string>
+			
+<!-- Strings related to accueil activity-->
     <string name="title_activity_accueil">AccueilActivity</string>
 
+<!-- saisie user layout -->
+    <string name="btnWriteUserBDD">Créer</string>
+    <string name="btnModifUserBDD">Modifier</string>
+    <string name="checkboxSuperUser">Super-utilisateur</string>
+    <string name="btnAnnul">Annuler</string>
+
+<!-- shared preferences -->
+    <string name="shPrefsSuperUser">superUser</string>
+    <string name="shPrefsUserLogin">userLogin</string>
+    <string name="shPrefsUserName">userName</string>
+    
+<!-- Strings related to login activity-->
+    <string name="title_activity_login">Yaourt: Sign in</string>
+    <string name="prompt_login">Login</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_register"><b>Sign in</b> or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+
+<!-- messages d'erreur -->
+    <string name="error_used_login">This login is already used</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    
+<!-- menu login -->
+    <string name="action_forgot_password">Recover lost password</string>
+
+<!-- menu accueil -->
+    <string name="menu_homeAddUser">Add user</string>
+    <string name="menu_homeModifUser">Modify account</string>
+
+<!-- hint input fields -->
+    <string name="hint_userLogin">Saisir login</string>
+    <string name="hint_userName">Saisir nom</string>
+    <string name="hint_userPassw">Saisir mot de passe</string>
+    
 </resources>
